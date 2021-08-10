@@ -1,6 +1,9 @@
 最近回顾了一下JVM的知识，把jdk12的源代码在Centos环境编译了一下，还比较顺利，趁热打铁，把编译过程在docker进行封装，
 便于以后可以快速启用，执行脚本如下(以后就可以快速编译自己定制的JDK啦:):
 
+- 脚本代码参见: https://github.com/perfectstorm88/jdk-compile-with-docker
+- 官方编译说明: https://openjdk.java.net/groups/build/doc/building.html
+  
 ```bash
 docker build -t my-jdk # 
 docker run my-jdk /jdk-release/jdk/bin/java -version  # 验证
